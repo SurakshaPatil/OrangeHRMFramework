@@ -23,10 +23,17 @@ public class DashboardPage {
     private WebElement dashboardHeading;
 
     public boolean isDashboardDisplayed() {
-    	
-    	 wait.waitForVisibility(dashboardHeading);
 
-        return dashboardHeading.isDisplayed();
+        try {
 
+            WaitUtility.waitForVisibility(driver, dashboardHeading);
+
+            return dashboardHeading.isDisplayed();
+
+        } catch (Exception e) {
+
+            return false;
+
+        }
     }
 }

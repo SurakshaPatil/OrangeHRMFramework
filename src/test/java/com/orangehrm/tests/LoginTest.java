@@ -1,33 +1,47 @@
 package com.orangehrm.tests;
+import org.testng.annotations.Listeners;
 
+import com.orangehrm.listeners.TestListener;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.orangehrm.base.BaseClass;
-import com.orangehrm.config.ConfigReader;
 import com.orangehrm.pages.DashboardPage;
 import com.orangehrm.pages.LoginPage;
+import com.orangehrm.utilities.DataProviders;
 
+@Listeners(TestListener.class)
 public class LoginTest extends BaseClass {
+	
 
-	 @Test
-	    public void verifyLogin() {
+	@Test(dataProvider = "loginData",
+		      dataProviderClass = DataProviders.class,
+		      retryAnalyzer = com.orangehrm.retry.RetryAnalyzer.class)
+		public void verifyLogin(String username,
+		                        String password,
+		                        String expectedResult) {
 
-	        ConfigReader config = new ConfigReader();
+		    LoginPage login = new LoginPage(driver);
 
-	        LoginPage login = new LoginPage(driver);
+		    login.login(username, password);
 
-	        login.login(
+		    DashboardPage dashboard = new DashboardPage(driver);
 
-	                config.getProperty("username"),
+		    boolean actualResult = dashboard.isDashboardDisplayed();
 
-	                config.getProperty("password"));
-	        
-	        DashboardPage dashboard = new DashboardPage(driver);
+		    TestListener.logStep(
+		            "Actual login result: " + actualResult);
 
-	        Assert.assertTrue(
-	                dashboard.isDashboardDisplayed(),
-	                "Dashboard is not displayed. Login Failed.");
+		    if (expectedResult.equalsIgnoreCase("Pass")) {
 
-	    }
+		        Assert.assertTrue(actualResult,
+		                "Expected login to succeed, but it failed.");
+
+		    } else {
+
+		        Assert.assertFalse(actualResult,
+		                "Expected login to fail, but it succeeded.");
+		    }
+		}
+
 }
