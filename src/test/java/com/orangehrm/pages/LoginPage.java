@@ -14,6 +14,7 @@ public class LoginPage {
 	WaitUtility wait;
 	private static final Logger logger =
 	        LogManager.getLogger(LoginPage.class);
+	
     public LoginPage(WebDriver driver){
 
         this.driver = driver;

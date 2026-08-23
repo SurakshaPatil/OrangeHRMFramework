@@ -1,0 +1,17 @@
+com\orangehrm\pages\PIMPage.class
+com\orangehrm\tests\LogoutTest.class
+com\orangehrm\utilities\DataProviders.class
+com\orangehrm\utilities\ExcelUtility.class
+com\orangehrm\config\ConfigReader.class
+com\orangehrm\utilities\ScreenshotUtility.class
+com\orangehrm\retry\RetryAnalyzer.class
+com\orangehrm\pages\LogoutPage.class
+com\orangehrm\tests\AddEmployeeTest.class
+com\orangehrm\listeners\TestListener.class
+com\orangehrm\base\BaseClass.class
+com\orangehrm\pages\AddEmployeePage.class
+com\orangehrm\pages\DashboardPage.class
+com\orangehrm\pages\LoginPage.class
+com\orangehrm\utilities\WaitUtility.class
+com\orangehrm\utilities\ExtentReportManager.class
+com\orangehrm\tests\LoginTest.class

@@ -17,7 +17,16 @@ public class ScreenshotUtility {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss")
                 .format(new Date());
 
-        String path = "screenshots/" + testName + "_" + timestamp + ".png";
+        String folderPath = "screenshots";
+
+        File folder = new File(folderPath);
+
+        if (!folder.exists()) {
+            folder.mkdirs();
+        }
+
+        String path = folderPath + "/"
+                + testName + "_" + timestamp + ".png";
 
         TakesScreenshot ts = (TakesScreenshot) driver;
 
@@ -26,8 +35,11 @@ public class ScreenshotUtility {
         File destination = new File(path);
 
         try {
+
             FileUtils.copyFile(source, destination);
+
         } catch (IOException e) {
+
             e.printStackTrace();
         }
 
