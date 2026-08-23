@@ -1,5 +1,6 @@
 package com.orangehrm.listeners;
 
+import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
@@ -16,11 +17,10 @@ public class TestListener implements ITestListener {
             ExtentReportManager.getReportInstance();
 
     public static ExtentTest test;
-    
+
     public static void logStep(String message) {
 
         test.info(message);
-
     }
 
     @Override
@@ -42,12 +42,15 @@ public class TestListener implements ITestListener {
 
         test.fail(result.getThrowable());
 
-        String screenshotPath =
-                ScreenshotUtility.captureScreenshot(
-                        BaseClass.driver,
-                        result.getName());
+        if (BaseClass.driver != null) {
 
-        test.addScreenCaptureFromPath(screenshotPath);
+            String screenshotPath =
+                    ScreenshotUtility.captureScreenshot(
+                            BaseClass.driver,
+                            result.getName());
+
+            test.addScreenCaptureFromPath(screenshotPath);
+        }
     }
 
     @Override
@@ -57,8 +60,16 @@ public class TestListener implements ITestListener {
     }
 
     @Override
-    public void onFinish(
-            org.testng.ITestContext context) {
+    public void onFinish(ITestContext context) {
+
+        if (BaseClass.driver != null) {
+
+            BaseClass.logger.info("Closing Browser");
+
+            BaseClass.driver.quit();
+
+            BaseClass.driver = null;
+        }
 
         extent.flush();
     }

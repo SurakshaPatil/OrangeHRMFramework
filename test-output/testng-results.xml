@@ -1,95 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-10T13:58:35 IST" name="Default suite" finished-at="2026-08-10T13:59:11 IST" duration-ms="36353">
+  <suite started-at="2026-08-23T12:25:20 IST" name="Default suite" finished-at="2026-08-23T12:26:15 IST" duration-ms="55197">
     <groups>
     </groups>
-    <test started-at="2026-08-10T13:58:35 IST" name="Default test" finished-at="2026-08-10T13:59:11 IST" duration-ms="36353">
-      <class name="com.orangehrm.tests.AddEmployeeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.AddEmployeeTest@1a760689]" started-at="2026-08-10T13:58:35 IST" name="setup" finished-at="2026-08-10T13:58:50 IST" duration-ms="15178" status="PASS">
+    <test started-at="2026-08-23T12:25:20 IST" name="Default test" finished-at="2026-08-23T12:26:15 IST" duration-ms="55197">
+      <class name="com.orangehrm.tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.LoginTest@5dcd8c7a]" started-at="2026-08-23T12:25:21 IST" name="setup" finished-at="2026-08-23T12:25:28 IST" duration-ms="6854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyNavigationToAddEmployee()[pri:0, instance:com.orangehrm.tests.AddEmployeeTest@1a760689]" started-at="2026-08-10T13:58:50 IST" name="verifyNavigationToAddEmployee" finished-at="2026-08-10T13:59:11 IST" duration-ms="20677" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button data-v-10d463b7="" data-v-304890b0="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space">...</button> is not clickable at point (1307, 493). Other element would receive the click: <div data-v-d5bfe35b="" class="oxd-form-loader">...</div>
-  (Session info: chrome=151.0.7922.77)
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5246af84601799e35b5cbbc5edf8c1f9, clickElement {id=f.34ED58FC3FF0718404F87BE45F268860.d.985EC7A2CAFD021347E4322528AA3220.e.280}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.77, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51059}, goog:processID: 2696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51059/devtoo..., se:cdpVersion: 151.0.7922.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5246af84601799e35b5cbbc5edf8c1f9)] -> xpath: //button[@type='submit']]
-Session ID: 5246af84601799e35b5cbbc5edf8c1f9]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button data-v-10d463b7="" data-v-304890b0="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space">...</button> is not clickable at point (1307, 493). Other element would receive the click: <div data-v-d5bfe35b="" class="oxd-form-loader">...</div>
-  (Session info: chrome=151.0.7922.77)
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5246af84601799e35b5cbbc5edf8c1f9, clickElement {id=f.34ED58FC3FF0718404F87BE45F268860.d.985EC7A2CAFD021347E4322528AA3220.e.280}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.77, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51059}, goog:processID: 2696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51059/devtoo..., se:cdpVersion: 151.0.7922.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5246af84601799e35b5cbbc5edf8c1f9)] -> xpath: //button[@type='submit']]
-Session ID: 5246af84601799e35b5cbbc5edf8c1f9
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
-at com.orangehrm.pages.AddEmployeePage.clickSave(AddEmployeePage.java:72)
-at com.orangehrm.pages.AddEmployeePage.addEmployee(AddEmployeePage.java:81)
-at com.orangehrm.tests.AddEmployeeTest.verifyNavigationToAddEmployee(AddEmployeeTest.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.LoginTest@5dcd8c7a]" started-at="2026-08-23T12:25:28 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-08-23T12:25:30 IST" duration-ms="2417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pass]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyNavigationToAddEmployee -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.AddEmployeeTest@1a760689]" started-at="2026-08-10T13:59:11 IST" name="tearDown" finished-at="2026-08-10T13:59:11 IST" duration-ms="269" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.LoginTest@5dcd8c7a]" started-at="2026-08-23T12:25:30 IST" name="tearDown" finished-at="2026-08-23T12:25:30 IST" duration-ms="240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.orangehrm.tests.AddEmployeeTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.LoginTest@5dcd8c7a]" started-at="2026-08-23T12:25:30 IST" name="setup" finished-at="2026-08-23T12:25:34 IST" duration-ms="3992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.LoginTest@5dcd8c7a]" started-at="2026-08-23T12:25:34 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-08-23T12:25:45 IST" duration-ms="11198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fail]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.LoginTest@5dcd8c7a]" started-at="2026-08-23T12:25:45 IST" name="tearDown" finished-at="2026-08-23T12:25:46 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.LoginTest@5dcd8c7a]" started-at="2026-08-23T12:25:46 IST" name="setup" finished-at="2026-08-23T12:25:49 IST" duration-ms="3690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.LoginTest@5dcd8c7a]" started-at="2026-08-23T12:25:49 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-08-23T12:26:01 IST" duration-ms="11215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WrongUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fail]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.LoginTest@5dcd8c7a]" started-at="2026-08-23T12:26:01 IST" name="tearDown" finished-at="2026-08-23T12:26:01 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.LoginTest@5dcd8c7a]" started-at="2026-08-23T12:26:01 IST" name="setup" finished-at="2026-08-23T12:26:04 IST" duration-ms="3461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.LoginTest@5dcd8c7a]" started-at="2026-08-23T12:26:04 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-08-23T12:26:15 IST" duration-ms="10888" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fail]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.LoginTest@5dcd8c7a]" started-at="2026-08-23T12:26:15 IST" name="tearDown" finished-at="2026-08-23T12:26:15 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangehrm.tests.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

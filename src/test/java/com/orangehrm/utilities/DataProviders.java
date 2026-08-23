@@ -9,7 +9,7 @@ public class DataProviders {
 
         ExcelUtility excel = new ExcelUtility(
                 "testData/LoginData.xlsx",
-                "Sheet1");
+                "LoginData");
 
         return excel.getExcelData();
 
