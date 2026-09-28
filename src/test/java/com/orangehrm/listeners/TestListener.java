@@ -61,16 +61,6 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onFinish(ITestContext context) {
-
-        if (BaseClass.driver != null) {
-
-            BaseClass.logger.info("Closing Browser");
-
-            BaseClass.driver.quit();
-
-            BaseClass.driver = null;
-        }
-
         extent.flush();
     }
 }

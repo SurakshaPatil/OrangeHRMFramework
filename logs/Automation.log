@@ -220,3 +220,94 @@
 2026-08-23 12:26:05,573 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
 2026-08-23 12:26:15,665 INFO  com.orangehrm.base.BaseClass - Closing Browser
 2026-08-23 12:26:15,882 INFO  com.orangehrm.base.BaseClass - Closing Browser
+2026-09-28 17:05:32,859 INFO  com.orangehrm.base.BaseClass - Launching Browser
+2026-09-28 17:05:35,652 INFO  com.orangehrm.base.BaseClass - Application Launched
+2026-09-28 17:05:36,304 INFO  com.orangehrm.pages.LoginPage - Entering Username
+2026-09-28 17:05:36,370 INFO  com.orangehrm.pages.LoginPage - Entering Password
+2026-09-28 17:05:36,448 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
+2026-09-28 17:05:38,141 INFO  com.orangehrm.pages.PIMPage - Clicking PIM Menu
+2026-09-28 17:05:39,725 INFO  com.orangehrm.pages.PIMPage - Clicking Add Employee
+2026-09-28 17:05:41,159 INFO  com.orangehrm.pages.LoginPage - Entering First Name
+2026-09-28 17:05:41,232 INFO  com.orangehrm.pages.LoginPage - Entering Last Name
+2026-09-28 17:05:41,338 INFO  com.orangehrm.pages.LoginPage - Clicking Save Button
+2026-09-28 17:05:47,096 INFO  com.orangehrm.base.BaseClass - Launching Browser
+2026-09-28 17:05:49,694 INFO  com.orangehrm.base.BaseClass - Application Launched
+2026-09-28 17:05:50,312 INFO  com.orangehrm.pages.LoginPage - Entering Username
+2026-09-28 17:05:50,359 INFO  com.orangehrm.pages.LoginPage - Entering Password
+2026-09-28 17:05:50,446 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
+2026-09-28 17:05:52,273 INFO  com.orangehrm.pages.LoginPage - clicking profile menu
+2026-09-28 17:05:52,879 INFO  com.orangehrm.pages.LoginPage - click logout
+2026-09-28 18:31:50,803 INFO  com.orangehrm.base.BaseClass - Launching Browser
+2026-09-28 18:31:53,446 INFO  com.orangehrm.base.BaseClass - Application Launched
+2026-09-28 18:31:54,077 INFO  com.orangehrm.pages.LoginPage - Entering Username
+2026-09-28 18:31:54,126 INFO  com.orangehrm.pages.LoginPage - Entering Password
+2026-09-28 18:31:54,206 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
+2026-09-28 18:31:55,771 INFO  com.orangehrm.pages.PIMPage - Clicking PIM Menu
+2026-09-28 18:31:57,425 INFO  com.orangehrm.pages.PIMPage - Clicking Add Employee
+2026-09-28 18:31:58,416 INFO  com.orangehrm.pages.LoginPage - Entering First Name
+2026-09-28 18:31:58,494 INFO  com.orangehrm.pages.LoginPage - Entering Last Name
+2026-09-28 18:31:58,595 INFO  com.orangehrm.pages.LoginPage - Clicking Save Button
+2026-09-28 18:32:05,116 INFO  com.orangehrm.base.BaseClass - Launching Browser
+2026-09-28 18:32:06,099 INFO  com.orangehrm.base.BaseClass - Application Launched
+2026-09-28 18:32:09,258 INFO  com.orangehrm.pages.LoginPage - Entering Username
+2026-09-28 18:32:09,311 INFO  com.orangehrm.pages.LoginPage - Entering Password
+2026-09-28 18:32:09,389 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
+2026-09-28 18:32:11,711 INFO  com.orangehrm.base.BaseClass - Launching Browser
+2026-09-28 18:32:14,626 INFO  com.orangehrm.base.BaseClass - Application Launched
+2026-09-28 18:32:15,166 INFO  com.orangehrm.pages.LoginPage - Entering Username
+2026-09-28 18:32:15,211 INFO  com.orangehrm.pages.LoginPage - Entering Password
+2026-09-28 18:32:15,264 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
+2026-09-28 18:32:26,710 INFO  com.orangehrm.base.BaseClass - Launching Browser
+2026-09-28 18:32:29,559 INFO  com.orangehrm.base.BaseClass - Application Launched
+2026-09-28 18:32:30,104 INFO  com.orangehrm.pages.LoginPage - Entering Username
+2026-09-28 18:32:30,152 INFO  com.orangehrm.pages.LoginPage - Entering Password
+2026-09-28 18:32:30,243 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
+2026-09-28 18:32:43,261 INFO  com.orangehrm.base.BaseClass - Launching Browser
+2026-09-28 18:32:47,016 INFO  com.orangehrm.base.BaseClass - Application Launched
+2026-09-28 18:32:47,584 INFO  com.orangehrm.pages.LoginPage - Entering Username
+2026-09-28 18:32:47,619 INFO  com.orangehrm.pages.LoginPage - Entering Password
+2026-09-28 18:32:47,676 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
+2026-09-28 18:32:58,719 INFO  com.orangehrm.base.BaseClass - Launching Browser
+2026-09-28 18:33:01,273 INFO  com.orangehrm.base.BaseClass - Application Launched
+2026-09-28 18:33:01,806 INFO  com.orangehrm.pages.LoginPage - Entering Username
+2026-09-28 18:33:01,854 INFO  com.orangehrm.pages.LoginPage - Entering Password
+2026-09-28 18:33:01,911 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
+2026-09-28 18:33:03,957 INFO  com.orangehrm.pages.LoginPage - clicking profile menu
+2026-09-28 18:33:04,575 INFO  com.orangehrm.pages.LoginPage - click logout
+2026-09-28 18:35:37,334 INFO  com.orangehrm.base.BaseClass - Launching Browser
+2026-09-28 18:35:40,522 INFO  com.orangehrm.base.BaseClass - Application Launched
+2026-09-28 18:35:41,121 INFO  com.orangehrm.pages.LoginPage - Entering Username
+2026-09-28 18:35:41,195 INFO  com.orangehrm.pages.LoginPage - Entering Password
+2026-09-28 18:35:41,252 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
+2026-09-28 18:35:42,804 INFO  com.orangehrm.pages.PIMPage - Clicking PIM Menu
+2026-09-28 18:35:44,360 INFO  com.orangehrm.pages.PIMPage - Clicking Add Employee
+2026-09-28 18:35:45,331 INFO  com.orangehrm.pages.LoginPage - Entering First Name
+2026-09-28 18:35:45,417 INFO  com.orangehrm.pages.LoginPage - Entering Last Name
+2026-09-28 18:35:45,523 INFO  com.orangehrm.pages.LoginPage - Clicking Save Button
+2026-09-28 18:35:53,316 INFO  com.orangehrm.base.BaseClass - Launching Browser
+2026-09-28 18:35:55,845 INFO  com.orangehrm.base.BaseClass - Application Launched
+2026-09-28 18:35:56,380 INFO  com.orangehrm.pages.LoginPage - Entering Username
+2026-09-28 18:35:56,419 INFO  com.orangehrm.pages.LoginPage - Entering Password
+2026-09-28 18:35:56,472 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
+2026-09-28 18:35:58,934 INFO  com.orangehrm.base.BaseClass - Launching Browser
+2026-09-28 18:36:02,102 INFO  com.orangehrm.base.BaseClass - Application Launched
+2026-09-28 18:36:02,657 INFO  com.orangehrm.pages.LoginPage - Entering Username
+2026-09-28 18:36:02,690 INFO  com.orangehrm.pages.LoginPage - Entering Password
+2026-09-28 18:36:02,780 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
+2026-09-28 18:36:14,133 INFO  com.orangehrm.base.BaseClass - Launching Browser
+2026-09-28 18:36:16,801 INFO  com.orangehrm.base.BaseClass - Application Launched
+2026-09-28 18:36:17,339 INFO  com.orangehrm.pages.LoginPage - Entering Username
+2026-09-28 18:36:17,389 INFO  com.orangehrm.pages.LoginPage - Entering Password
+2026-09-28 18:36:17,438 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
+2026-09-28 18:36:28,841 INFO  com.orangehrm.base.BaseClass - Launching Browser
+2026-09-28 18:36:31,469 INFO  com.orangehrm.base.BaseClass - Application Launched
+2026-09-28 18:36:32,003 INFO  com.orangehrm.pages.LoginPage - Entering Username
+2026-09-28 18:36:32,044 INFO  com.orangehrm.pages.LoginPage - Entering Password
+2026-09-28 18:36:32,120 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
+2026-09-28 18:36:43,572 INFO  com.orangehrm.base.BaseClass - Launching Browser
+2026-09-28 18:36:46,733 INFO  com.orangehrm.base.BaseClass - Application Launched
+2026-09-28 18:36:47,281 INFO  com.orangehrm.pages.LoginPage - Entering Username
+2026-09-28 18:36:47,323 INFO  com.orangehrm.pages.LoginPage - Entering Password
+2026-09-28 18:36:47,389 INFO  com.orangehrm.pages.LoginPage - Clicking Login Button
+2026-09-28 18:36:48,981 INFO  com.orangehrm.pages.LoginPage - clicking profile menu
+2026-09-28 18:36:49,587 INFO  com.orangehrm.pages.LoginPage - click logout

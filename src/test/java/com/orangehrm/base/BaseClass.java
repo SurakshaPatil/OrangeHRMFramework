@@ -87,12 +87,13 @@ public class BaseClass {
 
     @AfterMethod
     public void tearDown() {
-
         if (driver != null) {
-
-            logger.info("Closing Browser");
-
-            driver.quit();
+            try {
+                driver.quit();
+            } finally {
+                driver = null;
+            }
         }
+    
     }
 }

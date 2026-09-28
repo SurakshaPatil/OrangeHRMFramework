@@ -1,7 +1,8 @@
 package com.orangehrm.utilities;
 
-import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -11,22 +12,30 @@ public class ExcelUtility {
     private XSSFWorkbook workbook;
     private XSSFSheet sheet;
 
-    public ExcelUtility(String filePath, String sheetName) {
+    public ExcelUtility(String filePath, String sheetName) throws IOException {
 
-        try {
+        InputStream inputStream = getClass()
+                .getClassLoader()
+                .getResourceAsStream(
+                        filePath.startsWith("/")
+                                ? filePath.substring(1)
+                                : filePath
+                );
 
-            FileInputStream fis = new FileInputStream(filePath);
-
-            workbook = new XSSFWorkbook(fis);
-
-            sheet = workbook.getSheet(sheetName);
-
-        } catch (IOException e) {
-
-            e.printStackTrace();
-
+        if (inputStream == null) {
+            throw new FileNotFoundException(
+                    "Excel file not found in classpath: " + filePath
+            );
         }
 
+        workbook = new XSSFWorkbook(inputStream);
+        sheet = workbook.getSheet(sheetName);
+
+        if (sheet == null) {
+            throw new IllegalArgumentException(
+                    "Excel sheet not found: " + sheetName
+            );
+        }
     }
 
     public int getRowCount() {
