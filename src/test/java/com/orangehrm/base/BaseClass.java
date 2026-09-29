@@ -31,7 +31,8 @@ public class BaseClass {
         String browser = config.getProperty("browser");
 
         // Check whether execution is happening in CI/CD
-        boolean isCI = System.getenv("CI") != null;
+        boolean isCI = System.getenv("CI") != null
+                || System.getenv("TF_BUILD") != null;
 
         if (browser.equalsIgnoreCase("chrome")) {
 
@@ -40,51 +41,31 @@ public class BaseClass {
             ChromeOptions options = new ChromeOptions();
 
             if (isCI) {
+
                 options.addArguments("--headless=new");
                 options.addArguments("--no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 options.addArguments("--window-size=1920,1080");
+
+                // Additional stability arguments for Azure DevOps
+                options.addArguments("--disable-gpu");
+                options.addArguments("--disable-extensions");
+                options.addArguments("--remote-allow-origins=*");
             }
 
             driver = new ChromeDriver(options);
-
-        } else if (browser.equalsIgnoreCase("firefox")) {
-
-            WebDriverManager.firefoxdriver().setup();
-
-            FirefoxOptions options = new FirefoxOptions();
-
-            if (isCI) {
-                options.addArguments("-headless");
-            }
-
-            driver = new FirefoxDriver(options);
-
-        } else if (browser.equalsIgnoreCase("edge")) {
-
-            WebDriverManager.edgedriver().setup();
-
-            EdgeOptions options = new EdgeOptions();
-
-            if (isCI) {
-                options.addArguments("--headless=new");
-                options.addArguments("--no-sandbox");
-                options.addArguments("--disable-dev-shm-usage");
-                options.addArguments("--window-size=1920,1080");
-            }
-
-            driver = new EdgeDriver(options);
         }
 
         logger.info("Launching Browser");
 
-        driver.manage().window().maximize();
+        if (!isCI) {
+            driver.manage().window().maximize();
+        }
 
         driver.get(config.getProperty("url"));
 
         logger.info("Application Launched");
     }
-
     @AfterMethod
     public void tearDown() {
         if (driver != null) {
