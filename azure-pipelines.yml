@@ -16,3 +16,11 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'test'
+
+- task: PublishTestResults@2
+  displayName: 'Publish TestNG Results'
+  condition: succeededOrFailed()
+  inputs:
+    testResultsFiles: 'test-output/testng-results.xml'
+    testResultsFormat: 'JUnit'
+    failTaskOnFailedTests: false
